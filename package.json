@@ -1,52 +1,80 @@
 {
-  "name": "gatsby-blog-cosmicjs",
-  "description": "Gatsby Blog Cosmic JS",
-  "version": "2.0.0",
-  "author": "Jazib Sawar <jazibsawar@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/jazibsawar/gatsby-blog-cosmicjs/issues"
+  "name": "@gatsbystorefront/gatsby-theme-storefront-shopify",
+  "version": "1.0.1",
+  "keywords": [
+    "gatsbystorefront",
+    "shopify",
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin",
+    "gatsby-source-shopify"
+  ],
+  "author": {
+    "name": "Pavel Ivanov",
+    "email": "paveliv@gmail.com",
+    "url": "https://gatsbystorefront.com/"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/gatsbystorefront/gatsby-theme-storefront-shopify",
+  "license": "MPL-2.0",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^2.15.18",
-    "gatsby-plugin-google-analytics": "^2.1.16",
-    "gatsby-plugin-offline": "^3.0.7",
-    "gatsby-plugin-react-helmet": "^3.1.7",
-    "gatsby-plugin-typography": "^2.3.7",
-    "gatsby-source-cosmicjs": "^1.0.1",
-    "gatsby-source-filesystem": "^2.1.24",
-    "lodash": "^4.17.15",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.17",
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
+    "@mdx-js/react": "^1.5.1",
+    "@n8tb1t/use-scroll-position": "^1.0.43",
+    "@reach/visually-hidden": "^0.6.1",
+    "@rebass/forms": "^4.0.6",
+    "@rebass/preset": "^4.0.5",
+    "@theme-ui/presets": "^0.2.42",
+    "elasticlunr": "^0.9.5",
+    "gatsby-image": "^2.2.7",
+    "gatsby-plugin-lint-queries": "^0.0.3",
+    "gatsby-plugin-manifest": "^2.2.29",
+    "gatsby-plugin-nprogress": "^2.1.14",
+    "gatsby-plugin-offline": "^3.0.22",
+    "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sharp": "2.3.1",
+    "gatsby-plugin-sitemap": "^2.2.21",
+    "gatsby-plugin-theme-ui": "^0.2.43",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.1.6",
+    "gatsby-source-shopify": "^3.0.21",
+    "gatsby-transformer-sharp": "^2.2.4",
+    "pure-react-carousel": "^1.23.3",
+    "ramda": "^0.26.1",
+    "react-ga": "^2.7.0",
     "react-helmet": "^5.2.1",
-    "react-typography": "^0.16.19",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75",
-    "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "react-markdown": "^4.1.0",
+    "react-payment-icons-inline": "^1.0.22",
+    "react-share": "^3.0.1",
+    "react-social-icons": "^4.1.0",
+    "react-use": "^13.8.0",
+    "rebass": "^4.0.6",
+    "shopify-buy": "^2.6.1",
+    "theme-ui": "^0.2.43",
+    "util": "^0.12.1"
   },
   "devDependencies": {
-    "eslint": "^6.4.0",
-    "eslint-plugin-react": "^7.14.3",
-    "prettier": "^1.18.2"
+    "@babel/core": "^7.6.4",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-emotion": "^10.0.21",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-plugin-graphql": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "gatsby": "^2.13.38",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
-  "scripts": {
-    "start": "gatsby build; gatsby serve --port $PORT",
-    "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+  "peerDependencies": {
+    "gatsby": "^2.13.38",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
